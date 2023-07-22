@@ -1,0 +1,130 @@
+:root{
+    --green: #7AB730;
+    --green-full:#527a20;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+  }
+
+  
+.carousel-item{
+    height: 700px;
+}
+
+  /* Estilo para el botón del acordeón que ha recibido "like" */
+/* Estilo para el botón del acordeón cuando está activo (haciendo clic) */
+/* Estilo para el botón del acordeón cuando está activo (haciendo clic) */
+/* Estilos generales para el acordeón */
+/* Estilos generales para el acordeón */
+.accordion {
+    display: block;
+    margin: 20px 0;
+    
+  }
+  
+  .accordion-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    color: var(--green-full);
+    border-radius: 6px;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    transition: display 0.5s ease;
+  }
+  
+  /* Estilo para el botón del acordeón cuando está activo (haciendo clic) */
+  
+  /* Flecha hacia arriba */
+  .accordion-button.active .arrow {
+    border: solid rgb(207, 207, 207);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    transition: transform 0.5s ease;
+  }
+  
+  /* Flecha hacia abajo */
+  .accordion-button:not(.active) .arrow {
+    border: solid rgb(185, 185, 185);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.5s ease;
+  }
+  .mi-perfil{
+    width: fit-content;
+    margin: auto;
+  }
+  
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.loader {
+  width: 300px;
+  height: 20px;
+  border: 1px solid var(--green);
+  background-color: #111;
+  overflow: hidden;
+  border-radius: 5px ;
+}
+
+.bar {
+  width: 0;
+  height: 100%;
+  background-color: var(--green-full);
+  animation: progress 3s ease-out infinite;
+}
+
+@keyframes progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+h2 {
+  color: #f3f3f3;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  iframe{
+    width: 320px;
+  }
+}
+
