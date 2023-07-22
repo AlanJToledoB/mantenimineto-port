@@ -1,7 +1,7 @@
 const particlesConfig = {
     particles: {
       number: {
-        value: 50,
+        value: 100,
         density: {
           enable: true,
           value_area: 800
@@ -21,7 +21,7 @@ const particlesConfig = {
         }
       },
       opacity: {
-        value: 0.5,
+        value: 1,
         random: false,
         anim: {
           enable: false,
@@ -44,7 +44,7 @@ const particlesConfig = {
         enable: true,
         distance: 150,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: 0.7,
         width: 1
       },
       move: {
